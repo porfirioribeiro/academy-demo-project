@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+      }
+      div {
+        border: 1px solid red;
+        background-color: rgb(255 0 0 / 20%);
+        margin-block: 5px;
+        padding-inline: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      i am block
+      <div style="display: inline">i am inline, margins do not affect me</div>
+    </div>
+    <div>
+      i am block
+      <div style="display: inline-block">
+        i am inline-block, i'm like inline for my parent but i am like block
+        myself, and margins affect me
+      </div>
+    </div>
+    <div style="display: inline">i am inline, margins do not affect me</div>
+  </body>
+</html>
