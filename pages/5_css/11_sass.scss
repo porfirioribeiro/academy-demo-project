@@ -1,0 +1,9 @@
+$primary-color: #f00;
+
+.main{
+    background: $primary-color;
+
+    .child{
+        background: #0f0;
+    }
+}

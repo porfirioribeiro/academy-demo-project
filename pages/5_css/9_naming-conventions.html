@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .prefix-block {
+        background-color: red;
+        padding: 5px;
+      }
+      .prefix-block--modifier {
+        border: 1px solid green;
+      }
+      .prefix-block__element {
+        background-color: lightblue;
+      }
+      .prefix-block__element--modifier {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="prefix-block">
+      This is a block
+      <div class="prefix-block__element">This is a block element</div>
+    </div>
+    <div class="prefix-block prefix-block--modifier">
+      This is a block
+      <div class="prefix-block__element prefix-block__element--modifier">
+        This is a block element
+      </div>
+    </div>
+  </body>
+</html>

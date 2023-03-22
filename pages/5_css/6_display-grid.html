@@ -19,8 +19,8 @@
     </style>
   </head>
   <body>
-    <h4>Flex</h4>
-    <div style="display: flex; gap: 5px">
+    <h4>grid</h4>
+    <div style="display: grid; gap: 5px; grid-template-columns: repeat(2, 1fr)">
       <div>1</div>
       <div>2</div>
       <div style="width: 30px; height: 30px">3</div>
@@ -28,8 +28,15 @@
       <div>5</div>
     </div>
 
-    <h4>Flex inline</h4>
-    <div style="display: inline-flex; gap: 5px">
+    <h4>grid inline</h4>
+    <div
+      style="
+        display: inline-grid;
+        gap: 5px;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(2, 1fr);
+      "
+    >
       <div>1</div>
       <div>2</div>
       <div style="width: 30px; height: 30px">3</div>
@@ -37,26 +44,32 @@
       <div>5</div>
     </div>
 
-    <h4>Flex column and center</h4>
-    <div style="display: flex; gap: 5px; flex-direction: column; align-items: center;">
+    <h4>grid column and center</h4>
+    <div
+      style="
+        display: grid;
+        gap: 5px;
+        justify-items: center;
+      "
+    >
       <div>1</div>
       <div>2</div>
-      <div style="width: 30px; height: 30px;">3</div>
+      <div style="width: 30px; height: 30px">3</div>
       <div>4</div>
       <div>5</div>
     </div>
 
-    <h4>Flex justify end</h4>
-    <div style="display: flex; gap: 5px; justify-content: flex-end;">
+    <h4>grid justify end</h4>
+    <div style="display: grid; gap: 5px; justify-content: end">
       <div>1</div>
       <div>2</div>
-      <div style="width: 30px; height: 30px;">3</div>
+      <div style="width: 30px; height: 30px">3</div>
       <div>4</div>
       <div>5</div>
     </div>
 
-    <h4>Flex row center</h4>
-    <div style="display: flex; gap: 5px; align-items: center;">
+    <h4>grid row center</h4>
+    <div style="display: grid; gap: 5px;  grid-template-columns: repeat(2,1fr); justify-items: center">
       <div>1</div>
       <div>2</div>
       <div style="width: 30px; height: 30px">3</div>
