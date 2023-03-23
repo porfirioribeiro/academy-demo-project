@@ -16,15 +16,35 @@
         margin-block: 5px;
         padding-inline: 5px;
       }
+
+      .grid {
+        display: grid;
+        gap: 5px;
+        grid-template: 
+          "h h" 
+          "sidebar main" 
+          "footer footer" / 200px auto;
+      }
+      header{
+        grid-area: h;
+        background: beige;
+      }
     </style>
   </head>
   <body>
+
+    <div class="grid">
+      <header>header</header>
+      <main style="grid-area: main;">main</main>
+      <aside style="grid-area: sidebar;">sidebar</aside>
+      <footer  style="grid-area: footer;">footer</footer>
+    </div>
     <h4>grid</h4>
-    <div style="display: grid; gap: 5px; grid-template-columns: repeat(2, 1fr)">
-      <div>1</div>
-      <div>2</div>
+    <div style="display: grid; gap: 5px; grid-template-columns: 100px repeat(2, 1fr)">
+      <div style="grid-column: 1; grid-row: 1">1</div>
+      <div style="grid-column: 1 / span 2; grid-row: 1 /1">2</div>
       <div style="width: 30px; height: 30px">3</div>
-      <div>4</div>
+      <div style="grid-column: 2 / span 2;">4</div>
       <div>5</div>
     </div>
 
@@ -76,5 +96,6 @@
       <div>4</div>
       <div>5</div>
     </div>
+
   </body>
 </html>

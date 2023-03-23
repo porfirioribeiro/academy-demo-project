@@ -24,8 +24,8 @@
       <div>1</div>
       <div>2</div>
       <div style="width: 30px; height: 30px">3</div>
-      <div>4</div>
-      <div>5</div>
+      <div style="flex-grow: 2">4</div>
+      <div style="flex-grow: 1">5</div>
     </div>
 
     <h4>Flex inline</h4>
@@ -36,30 +36,49 @@
       <div>4</div>
       <div>5</div>
     </div>
+    <span>sdfs</span>
 
     <h4>Flex column and center</h4>
-    <div style="display: flex; gap: 5px; flex-direction: column; align-items: center;">
+    <div
+      style="
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: flex-end;
+      "
+    >
       <div>1</div>
       <div>2</div>
-      <div style="width: 30px; height: 30px;">3</div>
+      <div style="width: 30px; height: 30px">3</div>
       <div>4</div>
       <div>5</div>
     </div>
 
     <h4>Flex justify end</h4>
-    <div style="display: flex; gap: 5px; justify-content: flex-end;">
-      <div>1</div>
+    <div style="display: flex; gap: 5px; justify-content: center">
+      <div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nam praesentium, optio ducimus harum natus error debitis quo pariatur dignissimos qui ad aut magni mollitia nihil doloremque consequatur. Consectetur.</h1>
+      </div>
       <div>2</div>
-      <div style="width: 30px; height: 30px;">3</div>
+      <div style="width: 30px; height: 30px">3</div>
       <div>4</div>
       <div>5</div>
     </div>
 
     <h4>Flex row center</h4>
-    <div style="display: flex; gap: 5px; align-items: center;">
+    <div
+      style="
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80px;
+        height: 30vh;
+      "
+    >
       <div>1</div>
       <div>2</div>
-      <div style="width: 30px; height: 30px">3</div>
+      <div style="width: 30px; height: 30px; flex-shrink: 0">3</div>
       <div>4</div>
       <div>5</div>
     </div>
